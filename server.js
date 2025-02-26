@@ -4,6 +4,7 @@ const http = require("http");
 const { Server } = require("socket.io");
 const cors = require("cors");
 const chatRoutes = require("./routes/chatRoutes");
+const groupRoutes = require('./routes/groupRoutes');
 const Message = require("./models/message");
 
 const app = express();
@@ -16,6 +17,8 @@ app.use(cors({ origin: "http://localhost:8081" }));
 app.use(express.json());
 
 app.use("/api", chatRoutes);
+app.use("/api", groupRoutes);
+
 
 const users = {};
 
