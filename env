@@ -1,0 +1,3 @@
+PORT=3000
+chatDbURI = mongodb+srv://username:password@cluster0.pfemjwc.mongodb.net/chat
+employeesDbURI = mongodb://username:password@10.0.3.25:27017/uat_hrms?authSource=admin
